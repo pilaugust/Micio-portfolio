@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="age-verification-modal" class="modal">
+        <div class="modal-content">
+            <h2>Age Verification</h2>
+            <p>To access this content, you must be 18 years or older.</p>
+            <form id="age-verification-form">
+                <label for="birthdate">Enter your birthdate:</label>
+                <input type="date" id="birthdate" required>
+                <br><br>
+                <label for="terms">
+                    <input type="checkbox" id="terms" required>
+                    By proceeding, I confirm that I am 18 years of age or older and acknowledge that I am voluntarily choosing to view content intended for adults. I understand that the creator is not responsible for any unauthorized access to this material by individuals under the age of 18.                </label>
+                <br><br>
+                <button type="submit" class="submitBtn">SUBMIT</button>
+            </form>
+            <p id="error-message" style="color: red; display: none;">You must be 18 or older to access this content.</p>
+        </div>
+        <a href="index.html" class="returnHome">Return to front page</a>
+
+    </div>
+<div id="mainContent">
+    <div class="headerContainer">
+        <h1 class="header1">MICIOMOSTRO</h1>
+        <div class="headerPFP">
+            <img src="./images/pfp.png" alt="" class="pfp">
+            <h2 class="header2">Illustrator and Character designer</h2>
+        </div>
+        <img src="./images/home.png" alt="homeButton" class="homeBtn" onclick="window.location.href='/index.html';">
+    </div>
+    <div class="navBar">
+        <div class="divider"></div>
+        <div class="navBarBtns">
+            <button class="navBtn" onclick="window.location.href='/portfolio.html';">PORTFOLIO</button>
+            <button class="navBtn" onclick="window.location.href='/nsfw.html';">NSFW</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="portfolioContainer">
+        <div class="portfolio" id="sketches">
+
+        </div>
+        <div class="portfolio" id="coloredSketches">
+
+        </div>
+        <div class="portfolio" id="fullRender">
+
+        </div>
+        <div class="portfolio" id="furry">
+
+        </div>
+        <div class="portfolio" id="creatureDesign">
+        
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+</html>

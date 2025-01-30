@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="headerContainer">
+        <h1 class="header1">MICIOMOSTRO</h1>
+        <div class="headerPFP">
+            <img src="./images/pfp.png" alt="" class="pfp">
+            <h2 class="header2">Illustrator and Character designer</h2>
+        </div>
+        <img src="./images/home.png" alt="homeButton" class="homeBtn" onclick="window.location.href='/index.html';">
+    </div>
+    <div class="navBar">
+        <div class="divider"></div>
+        <div class="navBarBtns">
+            <button class="categoryBtn" onclick="navigateTo('sketches')">SKETCHES</button>
+            <button class="categoryBtn" onclick="navigateTo('coloredSketches')"> COLORED SKETCHES</button>
+            <button class="categoryBtn" onclick="navigateTo('fullRender')">FULL RENDER</button>
+            <button class="categoryBtn" onclick="navigateTo('furry')">FURRY</button>
+            <button class="categoryBtn" onclick="navigateTo('creatureDesign')">CREATURE DESIGN</button>
+            <button class="categoryBtn" onclick="window.location.href='/nsfw.html';">NSFW</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="portfolioContainer">
+        <div class="portfolio" id="sketches">
+            <h2 class="header3">Sketches</h1>
+                <p>[insert images here, the space between was just to check if the scroll down function was working]</p>
+        </div>
+        <div class="portfolio" id="coloredSketches">
+            <h2 class="header3">Colored setches</h1>
+            <p>[insert images here]</p>
+
+        </div>
+        <div class="portfolio" id="fullRender">
+            <h2 class="header3">Full renders</h1>
+            <p>[insert images here]</p>
+
+        </div>
+        <div class="portfolio" id="furry">
+            <h2 class="header3">Furry</h1>
+            <p>[insert images here]</p>
+
+        </div>
+        <div class="portfolio" id="creatureDesign">
+            <h2 class="header3">Creature design</h1>
+            <p>[insert images here]</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>
