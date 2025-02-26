@@ -58,3 +58,8 @@ window.onload = function() {
     const modal = document.getElementById("age-verification-modal");
     modal.style.display = "flex";  // Make sure the modal is displayed
 };
+
+
+function openLink(url) {
+    window.open(url, "_blank"); // Open the link in a new tab
+}
