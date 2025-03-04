@@ -3,6 +3,7 @@
 body{
     background-color: #FAFAFA;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .headerContainer{
@@ -92,7 +93,7 @@ body{
     cursor: pointer;
 }
 
-@media(max-width: 870px){
+@media(max-width: 1070px){
     .navBar{
         overflow: hidden;
     }
@@ -101,7 +102,16 @@ body{
         flex-direction: column;
         gap: 0px;
     }
+
+    .portfolioContent{
+        grid-template-columns: auto auto !important;
+    }
+
+    .portfolioImg{
+        max-width: 10em !important;
+    }
 }
+
 
 .navBtn:hover{
     background-color: #B8A59E;
@@ -219,6 +229,27 @@ body{
     color: white;
 }
 
+.priceContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#price1, #price2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#price3{
+    grid-column: span 2;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #mainContent{
     display: none;
 }
@@ -234,13 +265,26 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10em;
 }
 
 .portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 200px;
+    margin: 0px;
+    margin-top: 7em;
+}
+
+.portfolioImg{
+    max-width: 18em;
+}
+
+.portfolioContent{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    align-items: center;
 }
 
 .contentContainer{
@@ -259,4 +303,6 @@ body{
     border: 4px solid #B90000;
     padding: 20px;
     margin: 20px;
+    color: #5e5e5e;
+    font-family: "Raleway", sans-serif;
 }
