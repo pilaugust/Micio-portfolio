@@ -71,6 +71,14 @@ body{
     color: #5e5e5e;
 }
 
+.socialContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    text-align: center;
+    align-items: center;
+}
+
 .socialImg{
     width: 25px;
     height: 25px;
@@ -82,6 +90,10 @@ body{
     gap: 20px;
 }
 
+.socialBtn:hover{
+    scale: 1.2;
+}
+
 .socialBtn{
     width: 40px;
     height: 40px;
@@ -91,6 +103,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 @media(max-width: 1070px){

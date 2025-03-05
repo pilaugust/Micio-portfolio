@@ -63,3 +63,17 @@ window.onload = function() {
 function openLink(url) {
     window.open(url, "_blank"); // Open the link in a new tab
 }
+
+function sendEmail() {
+    const email = "miciomostro@example.com"; // Replace with your email
+    const subject = "";
+    const body = "";
+    
+    // Open a new small popup window
+    let emailWindow = window.open("", "_blank", "width=500,height=500");
+
+    // Delay setting the mailto link to allow popup to open
+    setTimeout(() => {
+        emailWindow.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }, 100);
+}
